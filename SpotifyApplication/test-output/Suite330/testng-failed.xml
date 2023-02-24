@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite330]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestNGTest.TestNGClass">
+        <methods>
+          <include name="clearPOMObjects"/>
+          <include name="NotificationOnOF"/>
+          <include name="LogOutMethod"/>
+          <include name="QuitBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="LoggedInAndSpotifyHomePageOpen"/>
+        </methods>
+      </class> <!-- TestNGTest.TestNGClass -->
+      <class name="TestNGTest.DemoTestNGClass">
+        <methods>
+          <include name="QuitBrowser"/>
+          <include name="clearPOMObjects"/>
+          <include name="LogOutMethod"/>
+          <include name="NotificationOnOF"/>
+          <include name="launchBrowser"/>
+          <include name="LoggedInAndSpotifyHomePageOpen"/>
+          <include name="ListenSong"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- TestNGTest.DemoTestNGClass -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="TestNGTest.TestNGClass">
+        <methods>
+          <include name="clearPOMObjects"/>
+          <include name="NotificationOnOF"/>
+          <include name="LogOutMethod"/>
+          <include name="QuitBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="createPOMObjects"/>
+          <include name="LoggedInAndSpotifyHomePageOpen"/>
+        </methods>
+      </class> <!-- TestNGTest.TestNGClass -->
+      <class name="TestNGTest.DemoTestNGClass">
+        <methods>
+          <include name="QuitBrowser"/>
+          <include name="clearPOMObjects"/>
+          <include name="CreatePlayList"/>
+          <include name="LogOutMethod"/>
+          <include name="NotificationOnOF"/>
+          <include name="launchBrowser"/>
+          <include name="LoggedInAndSpotifyHomePageOpen"/>
+          <include name="ListenSong"/>
+          <include name="createPOMObjects"/>
+        </methods>
+      </class> <!-- TestNGTest.DemoTestNGClass -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite330] -->
